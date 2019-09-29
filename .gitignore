@@ -1,5 +1,4 @@
 node_modules
 nodemon
 nodemon.cmd
-package-lock.json
 package.json
