@@ -5,10 +5,8 @@ const concat = require('gulp-concat')
 gulp.task('deps', ['deps.css', 'deps.fonts'])
 
 gulp.task('deps.css', () => {
-    return gulp.src([
-        'node_modules/font-awesome/css/font-awesome.css'
-    ])
-        .pipe(uglifycss({ "uglyComments": true }))
+    return gulp.src(['node_modules/font-awesome/css/font-awesome.css'])
+        .pipe(uglifycss({ "uglyComments": false }))
         .pipe(concat('deps.min.css'))
         .pipe(gulp.dest('build/assets/css'))
 })
