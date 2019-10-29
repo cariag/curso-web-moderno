@@ -1,3 +1,7 @@
 body {
-    background-color: red;
+    background-color: #045;
+    background-image: url(../imgs/kali.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
 }
